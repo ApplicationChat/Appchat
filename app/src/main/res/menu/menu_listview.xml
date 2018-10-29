@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:title="Thông tin tài khoản">
+    </item>
+    <item android:title="Cài đặt tài khoản">
+    </item>
+    <item android:title="Đăng suất">
+    </item>
+    <item android:title="Báo cáo sự cố">
+    </item>
+    <item android:title="Trợ giúp">
+    </item>
+    <item android:title="Chuyển tài khoản">
+    </item>
+</menu>

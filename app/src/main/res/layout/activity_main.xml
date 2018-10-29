@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical">
+   <Button
+       android:id="@+id/btsearch"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Tìm kiếm"
+       android:background="#fcfcfc"
+       android:drawableLeft="@drawable/icon_search"
+       app:showAsAction="ifRoom|collapseActionView"
+       app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+<TabHost
+    android:id="@+id/tabhost"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"></TabWidget>
+     <FrameLayout
+         android:id="@android:id/tabcontent"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/Tinnhan"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <include layout="@layout/layout_tinnhan" />
+
+         </LinearLayout>
+
+         <LinearLayout
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/hoatdong"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout="@layout/layout_hoatdong">
+            <include layout="@layout/layout_hoatdong"/>
+         </LinearLayout>
+
+         <LinearLayout
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/nhom"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout="@layout/layout_nhom">
+             <include layout="@layout/layout_nhom"/>
+         </LinearLayout>
+
+     </FrameLayout>
+</TabHost>
+
+</LinearLayout>
+
+<!--
+<android.support.v4.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+   &lt;!&ndash; <android.support.design.widget.NavigationView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="260dp"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_listview"
+        app:headerLayout="@layout/header_layout"
+        >
+
+
+
+
+    </android.support.design.widget.NavigationView>
+&ndash;&gt;
+
+</android.support.v4.widget.DrawerLayout>
+
+-->
